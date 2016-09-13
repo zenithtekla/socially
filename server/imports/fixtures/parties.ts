@@ -1,7 +1,7 @@
 import { Parties } from '../../../both/collections/parties.collection';
 
 export function loadParties() {
-  if (Parties.find().count() === 0) {
+  if (Parties.find().count() < 6 ) {
     const parties = [
       {
         name: 'Dubstep-Free Zone',
